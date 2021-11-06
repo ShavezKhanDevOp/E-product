@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c7586beadf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">sneakers</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarID">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="#">Collections</a>
+                        <a class="nav-link " aria-current="page" href="#">Men</a>
+                        <a class="nav-link " aria-current="page" href="#">Women</a>
+                        <a class="nav-link " aria-current="page" href="#">About</a>
+                        <a class="nav-link " aria-current="page" href="#">Contact</a>
+                    </div>
+                    <div class="navbar-nav d-flex flex-row me-1 ml-auto">
+                        <a class="nav-link me-3 me-lg-0" aria-current="page" href="#">
+                            <i class="fas fa-shopping-cart cart" aria-hidden="true"></i>
+                        </a>
+                        <a class="nav-link me-3 me-lg-0" aria-current="page" href="#">
+                            <img class="profie-img" src="./static/image-avatar.png" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <hr>
+        <div class="container">
+            <div class=" row">
+                <div class="col-lg-6">
+                    <img id="productImg" class="product" src="./static/image-product-1.jpg" alt="image-product-1.jpg">
+                    <div class="thumbnail-row row">
+                        <div class="thumbnail-col col-sm-2">
+                            <img class="thumbnail" src="./static/image-product-1-thumbnail.jpg"
+                                alt="image-product-1-thumbnail.jpg" srcset="">
+                        </div>
+                        <div class="thumbnail-col col-sm-2">
+                            <img class="thumbnail" src="./static/image-product-2-thumbnail.jpg"
+                                alt="image-product-1-thumbnail.jpg" srcset="">
+                        </div>
+                        <div class="thumbnail-col col-sm-2">
+                            <img class="thumbnail" src="./static/image-product-3-thumbnail.jpg"
+                                alt="image-product-1-thumbnail.jpg" srcset="">
+                        </div>
+                        <div class="thumbnail-col col-sm-2">
+                            <img class="thumbnail" src="./static/image-product-4-thumbnail.jpg"
+                                alt="image-product-1-thumbnail.jpg" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-details-container col-lg-6">
+                    <h2 class="company-name">Sneaker Company</h2>
+                    <h1 class="main-header">Fall Limited Edition Sneakers</h1>
+                    <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to
+                        make a type specimen book.
+                    </p>
+                    <h2 class="Price-header">$125 <span class="discount">50%</span></h2>
+                    <span class="actual_price">$250</span>
+                    <div class="counter-details row">
+                        <div class="col-lg-6">
+                            <span class="counter"><i class="Remove-Item btn btn-light fas fa-minus"></i>
+                                <input class="Quantity" type="text" value="1" max="100" min="1" disabled />
+                                <i class="Add-Item btn btn-light fas fa-plus btn-color"></i>
+                            </span>
+                            <button class="btn-submit btn btn-lg btn-warning" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/dynamic_img.js"></script>
+<script src="./js/AddQuentity.js"></script>
+
+</html>
